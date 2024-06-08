@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Main-color:#eee;
+    --btn-color:#000;
+    --border-color:#eee7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    color: var(--Main-color);
+}
+
+
+/* Start container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End container */
+
+/* Responsive */
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width:990px){
+    .container{
+        width: 950px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* Responsive */
+
+/* Start-header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../Img/sky_clouds_rain_92640_1024x768.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+header .container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container nav .logo {
+    text-transform: capitalize;
+    color: #fff;
+   
+}
+
+header .container nav a {
+    color: var(--Main-color);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+header .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+header .banner .text {
+    text-transform: uppercase;
+}
+
+header .banner .text p {
+    font-size: 2em;
+    margin: 0;
+    text-align: left;
+}
+
+header .banner .text h1 {
+    font-size: 10em;
+    letter-spacing: 7px;
+    margin: 0;
+}
+
+@media (max-width:768px){
+    header .banner .text h1 {
+        font-size: 7em;
+        letter-spacing: 7px;
+        margin: 0;
+    } 
+}
+
+header .banner .btn {
+    border: 1px solid var(--border-color);
+    color: var(--Main-color);
+    padding: 5px 7px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 3px;
+    
+}
+
+header .banner .btn:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 4s ease-in-out;
+}
+/* End-header */
